@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStarter Day</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header> 
-    <p>PROJECT APLIKASI WEB</p> 
-    <h1>TechStarter Day 2026</h1> 
-    <p>Dari pengguna teknologi menjadi pembuat teknologi.</p> 
- 
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>TechStarter Day 2026</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <script src="script.js" defer></script>
+</head> 
+<body> 
+  <header> 
+    <div class="header-container">
+      <p class="subtitle">PROJECT APLIKASI WEB</p> 
+      <h1>TechStarter Day 2026</h1> 
+      <p>Satu Web, Banyak Layar - Layout Responsif</p> 
+    </div>
+
     <nav aria-label="Navigasi utama"> 
       <a href="#tentang">Tentang</a> 
       <a href="#agenda">Agenda</a> 
@@ -20,52 +23,54 @@
     </nav> 
   </header> 
  
-<main> 
-    
-    <section id="tentang"> 
+  <main class="container"> 
+    <div class="card-list">
+      <section id="tentang" class="card"> 
         <h2>Tentang TechStarter Day</h2> 
-        <p> TechStarter Day adalah kegiatan pengenalan dunia pengembangan web 
-            untuk mahasiswa baru Teknologi Informasi.</p> 
- 
-            <article> 
-                <h3>Tujuan Kegiatan</h3> 
-                <p> Peserta mengenal cara developer menyusun informasi, menggunakan tools, membaca error, dan membangun sesuatu secara bertahap. </p> 
-            </article> 
-     </section>
+        <article>
+          <h3>Tujuan Kegiatan</h3> 
+          <p> 
+            Peserta mengenal cara developer menyusun informasi, menggunakan 
+            tools, membaca error, dan membangun sesuatu secara bertahap. 
+          </p> 
+          <div style="margin-top: 1rem;">
+            <button id="checkSeatBtn" type="button">Cek Sisa Kursi</button>
+          </div>
+        </article> 
+      </section>
 
-     <section id="agenda"> 
+      <section id="agenda" class="card"> 
         <h2>Agenda</h2> 
         <ol> 
-        <li>Mengenal cara kerja halaman web</li> 
-        <li>Menyusun struktur HTML semantic</li> 
-        <li>Mencoba DevTools dan debugging</li> 
-        <li>Menyimpan checkpoint dengan Git</li> 
+          <li>Mengenal cara kerja halaman web</li> 
+          <li>Menyusun struktur HTML semantic</li> 
+          <li>Mencoba DevTools dan debugging</li> 
+          <li>Menyimpan checkpoint dengan Git</li> 
         </ol> 
-    </section> 
+      </section> 
 
-   
-
-    <section id="manfaat"> 
-         <h2>Apa yang Akan Dipelajari?</h2> 
-         <figure> 
+      <section id="manfaat" class="card"> 
+        <h2>Apa yang Akan Dipelajari?</h2> 
+        <figure> 
           <img 
-        src="assets/images/download.jpg" 
-        alt="Presiden tertawa terbahak-bahak saat di wawancara" > 
-        <figcaption>Praktik dimulai dari memahami alat dan struktur sebelum mengejar 
-        tampilan.</figcaption> 
+            src="assets/images/download.jpg" 
+            alt="Presiden Jokowi Tertawa" 
+          > 
+          <figcaption>Praktik dimulai dari memahami alat dan struktur sebelum mengejar tampilan.</figcaption> 
         </figure> 
         <ul> 
-        <li>Membaca struktur halaman sebagai developer.</li> 
-        <li>Memilih tag berdasarkan makna konten.</li> 
-        <li>Mendiagnosis link dan gambar yang gagal.</li> 
-        <li>Menyimpan perkembangan project dengan Git.</li> 
+          <li>Membaca struktur halaman sebagai developer.</li> 
+          <li>Memilih tag berdasarkan makna konten.</li> 
+          <li>Mendiagnosis link dan gambar yang gagal.</li> 
+          <li>Menyimpan perkembangan project dengan Git.</li> 
         </ul> 
-    </section> 
-
-</main> 
+      </section> 
+    </div>
+  </main> 
  
   <footer id="kontak"> 
     <p>Politeknik Gajah Tunggal · Teknologi Informasi</p> 
-  </footer>
-</body>
+    <p>Project Aplikasi Web Semester 1</p> 
+  </footer> 
+</body> 
 </html>
